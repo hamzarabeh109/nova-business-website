@@ -1,208 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nova — Digital Solutions</title>
-    <meta name="description" content="Nova creates modern digital experiences for ambitious businesses.">
+  <title>NOVA — Digital Solutions</title>
+  <meta name="description" content="NOVA creates modern, responsive and high-performance digital experiences.">
+  <meta name="theme-color" content="#08090d">
 
-    <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="NOVA — Digital Solutions">
+  <meta property="og:description" content="Modern digital experiences built with precision.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">NOVA<span>.</span></a>
+  <div class="page-bg"></div>
 
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
 
-            <a href="#contact" class="nav-btn">Let's Talk</a>
+      <a href="#home" class="logo">
+        NOVA<span>•</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">
+        Let's Talk
+        <span>↗</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Digital solutions for modern businesses
+          </div>
+
+          <h1>
+            We build
+            <span>digital experiences</span>
+            that move businesses forward.
+          </h1>
+
+          <p class="hero-description">
+            Clean design, responsive interfaces and powerful front-end
+            development — crafted to turn ideas into memorable websites.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              Explore our work
+              <span>↗</span>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Start a project
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>100%</strong>
+              <span>Responsive</span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <span>Core technologies</span>
+            </div>
+
+            <div>
+              <strong>∞</strong>
+              <span>Possibilities</span>
+            </div>
+          </div>
+
         </div>
-    </header>
 
 
-    <!-- Hero -->
-    <main>
+        <!-- HERO VISUAL -->
+        <div class="hero-visual reveal">
 
-        <section id="home" class="hero">
-            <div class="container hero-content">
+          <div class="glow glow-one"></div>
+          <div class="glow glow-two"></div>
 
-                <div class="hero-text">
-                    <p class="eyebrow">DIGITAL SOLUTIONS</p>
+          <div class="browser">
 
-                    <h1>
-                        We build digital
-                        <span>experiences</span>
-                        that grow businesses.
-                    </h1>
+            <div class="browser-top">
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
-                    <p class="hero-description">
-                        Modern websites and digital solutions designed to
-                        help ambitious businesses stand out, connect with
-                        customers, and grow online.
-                    </p>
+              <div class="browser-url">
+                nova.digital
+              </div>
 
-                    <div class="hero-buttons">
-                        <a href="#contact" class="primary-btn">Start a Project →</a>
-                        <a href="#services" class="secondary-btn">Explore Services</a>
-                    </div>
-                </div>
-
-                <div class="hero-card">
-                    <div class="card-glow"></div>
-
-                    <div class="card-content">
-                        <p>YOUR VISION</p>
-                        <h2>→</h2>
-                        <div class="line"></div>
-                        <p>OUR SOLUTION</p>
-                    </div>
-                </div>
-
+              <div class="browser-icon">•••</div>
             </div>
-        </section>
 
+            <div class="dashboard">
 
-        <!-- Services -->
-        <section id="services" class="services section">
-            <div class="container">
+              <div class="dashboard-sidebar">
+                <div class="mini-logo">N</div>
 
-                <div class="section-heading">
-                    <p class="eyebrow">WHAT WE DO</p>
-                    <h2>Solutions built around your goals.</h2>
-                    <p>
-                        From idea to launch, we create digital experiences
-                        that are beautiful, functional and easy to use.
-                    </p>
+                <div class="side-line active"></div>
+                <div class="side-line"></div>
+                <div class="side-line"></div>
+                <div class="side-line"></div>
+
+                <div class="side-bottom"></div>
+              </div>
+
+              <div class="dashboard-main">
+
+                <div class="dashboard-header">
+                  <div>
+                    <small>OVERVIEW</small>
+                    <h3>Performance</h3>
+                  </div>
+
+                  <div class="date-pill">This month</div>
                 </div>
 
-                <div class="services-grid">
+                <div class="metric-grid">
 
-                    <article class="service-card">
-                        <span class="service-number">01</span>
-                        <h3>Web Development</h3>
-                        <p>
-                            Fast, responsive and scalable websites built
-                            around your business needs.
-                        </p>
-                        <a href="#contact">Learn more →</a>
-                    </article>
+                  <div class="metric-card">
+                    <small>Visitors</small>
+                    <strong>24.8K</strong>
+                    <span class="positive">+18.4%</span>
+                  </div>
 
-                    <article class="service-card">
-                        <span class="service-number">02</span>
-                        <h3>UI / UX Design</h3>
-                        <p>
-                            Clean and intuitive interfaces designed to
-                            create a better user experience.
-                        </p>
-                        <a href="#contact">Learn more →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <span class="service-number">03</span>
-                        <h3>Landing Pages</h3>
-                        <p>
-                            High-quality landing pages designed to turn
-                            visitors into customers.
-                        </p>
-                        <a href="#contact">Learn more →</a>
-                    </article>
+                  <div class="metric-card">
+                    <small>Conversion</small>
+                    <strong>8.42%</strong>
+                    <span class="positive">+6.2%</span>
+                  </div>
 
                 </div>
+
+                <div class="chart-card">
+
+                  <div class="chart-header">
+                    <span>Growth</span>
+                    <strong>+32.8%</strong>
+                  </div>
+
+                  <div class="chart">
+                    <div class="chart-grid"></div>
+
+                    <svg viewBox="0 0 500 180" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0%" stop-opacity=".35"/>
+                          <stop offset="100%" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+
+                      <path
+                        class="area"
+                        d="M0,150 C50,130 60,145 100,110 C140,75 160,115 200,95 C240,75 260,100 300,65 C340,30 370,70 400,45 C440,15 460,35 500,10 L500,180 L0,180 Z">
+                      </path>
+
+                      <path
+                        class="line"
+                        d="M0,150 C50,130 60,145 100,110 C140,75 160,115 200,95 C240,75 260,100 300,65 C340,30 370,70 400,45 C440,15 460,35 500,10">
+                      </path>
+                    </svg>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-        </section>
+          </div>
 
-
-        <!-- About -->
-        <section id="about" class="about section">
-            <div class="container about-grid">
-
-                <div>
-                    <p class="eyebrow">ABOUT NOVA</p>
-                    <h2>Simple ideas. Powerful digital experiences.</h2>
-                </div>
-
-                <div class="about-text">
-                    <p>
-                        We believe great digital products should be simple,
-                        useful and memorable.
-                    </p>
-
-                    <p>
-                        Our approach combines thoughtful design, clean
-                        development and attention to detail to create
-                        websites that work beautifully across every device.
-                    </p>
-
-                    <div class="stats">
-                        <div>
-                            <strong>100%</strong>
-                            <span>Responsive</span>
-                        </div>
-
-                        <div>
-                            <strong>24/7</strong>
-                            <span>Digital Presence</span>
-                        </div>
-
-                        <div>
-                            <strong>∞</strong>
-                            <span>Possibilities</span>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="floating-card floating-card-one">
+            <span class="floating-icon">✓</span>
+            <div>
+              <strong>Fast & Clean</strong>
+              <small>Built for performance</small>
             </div>
-        </section>
+          </div>
 
+          <div class="floating-card floating-card-two">
+            <span>98</span>
+            <small>Performance</small>
+          </div>
 
-        <!-- Contact -->
-        <section id="contact" class="contact section">
-            <div class="container contact-box">
-
-                <div>
-                    <p class="eyebrow">LET'S WORK TOGETHER</p>
-
-                    <h2>
-                        Have an idea?
-                        <span>Let's build it.</span>
-                    </h2>
-
-                    <p>
-                        Tell us about your project and let's create
-                        something great together.
-                    </p>
-                </div>
-
-                <a href="mailto:hello@nova.example" class="primary-btn">
-                    Get in Touch →
-                </a>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="logo">NOVA<span>.</span></div>
-
-            <p>© 2026 Nova. All rights reserved.</p>
         </div>
-    </footer>
+
+      </div>
+    </section>
 
 
-    <script src="script.js"></script>
+    <!-- TECHNOLOGIES -->
+    <section class="tech-strip">
+      <div class="container tech-container">
+
+        <span class="tech-label">BUILT WITH</span>
+
+        <div class="tech-list">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JAVASCRIPT</span>
+          <span>GIT</span>
+          <span>GITHUB</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">01 — SERVICES</span>
+
+            <h2>
+              Everything you need
+              <span>to go digital.</span>
+            </h2>
+          </div>
+
+          <p>
+            From a simple landing page to a complete business website,
+            every interface is designed with clarity, responsiveness and
+            performance in mind.
+          </p>
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+
+            <div class="service-icon">
+              &lt;/&gt;
+            </div>
+
+            <h3>Web Development</h3>
+
+            <p>
+              Modern websites built from scratch with clean,
+              maintainable front-end code.
+            </p>
+
+            <div class="service-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+
+            <div class="service-icon">
+              ◈
+            </div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+              Interfaces focused on visual hierarchy, usability,
+              consistency and a premium experience.
+            </p>
+
+            <div class="service-tags">
+              <span>UI</span>
+              <span>UX</span>
+              <span>Design</span>
+            </div>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+
+            <div class="service-icon">
+              ↗
+            </div>
+
+            <h3>Landing Pages</h3>
+
+            <p>
+              High-impact landing pages designed to communicate
+              your offer clearly and guide visitors to action.
+            </p>
+
+            <div class="service-tags">
+              <span>Landing</span>
+              <span>CTA</span>
+              <span>SEO</span>
+            </div>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+
+            <div class="service-icon">
+              ◌
+            </div>
+
+            <h3>Responsive Design</h3>
+
+            <p>
+              Pixel-conscious layouts that adapt smoothly across
+              phones, tablets, laptops and large screens.
+            </p>
+
+            <div class="service-tags">
+              <span>Mobile</span>
+              <span>Tablet</span>
+              <span>Desktop</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- WORK -->
+    <section class="section work-section" id="work">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">02 — FEATURED WORK</span>
+
+            <h2>
+              Built to look good.
+              <span>Built to work.</span>
+            </h2>
+          </div>
+
+          <p>
+            A selection of digital concepts showing how NOVA approaches
+            layout, visual systems and responsive interfaces.
+          </p>
+        </div>
+
+
+        <div class="featured-project reveal">
+
+          <div class="project-preview">
+
+            <div class="project-browser">
+              <div class="project-top">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span>nova-business.website</span>
+              </div>
+
+              <div class="project-screen">
+
+                <div class="screen-nav">
+                  <strong>NOVA</strong>
+
+                  <div>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+                </div>
+
+                <div class="screen-content">
+                  <small>CREATIVE DIGITAL STUDIO</small>
+
+                  <h3>
+                    Build something
+                    <strong>remarkable.</strong>
+                  </h3>
+
+                  <p>
+                    Digital experiences designed around your business.
+                  </p>
+
+                  <div class="screen-button">
+                    Explore →
+                  </div>
+                </div>
+
+                <div class="screen-orbit orbit-one"></div>
+                <div class="screen-orbit orbit-two"></div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="project-info">
+
+            <span class="project-type">DEMO PROJECT / 2026</span>
+
+            <h3>Nova Business Website</h3>
+
+            <p>
+              A premium business landing page focused on strong typography,
+              clear content hierarchy, responsive layouts and subtle
+              interactions.
+            </p>
+
+            <div class="project-details">
+
+              <div>
+                <span>Role</span>
+                <strong>Design + Development</strong>
+              </div>
+
+              <div>
+                <span>Stack</span>
+                <strong>HTML / CSS / JavaScript</strong>
+              </div>
+
+              <div>
+                <span>Focus</span>
+                <strong>Responsive Experience</strong>
+              </div>
+
+            </div>
+
+            <a href="#contact" class="text-link">
+              Build something similar
+              <span>↗</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+
+          <div class="about-card">
+
+            <div class="about-card-top">
+              <span>WHY NOVA</span>
+              <span>2026</span>
+            </div>
+
+            <div class="big-letter">N</div>
+
+            <div class="about-card-footer">
+              <strong>Design × Code</strong>
+              <span>Digital craft</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+          <span class="section-label">03 — ABOUT</span>
+
+          <h2>
+            Simple ideas.
+            <span>Exceptional execution.</span>
+          </h2>
+
+          <p>
+            NOVA is a modern digital studio concept focused on creating
+            websites that feel fast, clean and intentional.
+          </p>
+
+          <p>
+            Every project starts with the same goal: understand the
+            message, remove unnecessary complexity and build an experience
+            that works beautifully on every screen.
+          </p>
+
+          <ul class="check-list">
+            <li>
+              <span>✓</span>
+              Clean and structured code
+            </li>
+
+            <li>
+              <span>✓</span>
+              Mobile-first responsive layouts
+            </li>
+
+            <li>
+              <span>✓</span>
+              Modern visual direction
+            </li>
+
+            <li>
+              <span>✓</span>
+              Performance-conscious development
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="section process-section" id="process">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">04 — PROCESS</span>
+
+            <h2>
+              From idea
+              <span>to launch.</span>
+            </h2>
+          </div>
+
+          <p>
+            A simple process keeps projects focused, transparent and
+            moving in the right direction.
+          </p>
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-card reveal">
+            <span>01</span>
+            <div class="process-icon">⌕</div>
+            <h3>Discover</h3>
+            <p>
+              Understand the goal, audience, content and direction.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>02</span>
+            <div class="process-icon">◈</div>
+            <h3>Design</h3>
+            <p>
+              Build the visual structure, hierarchy and interface.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>03</span>
+            <div class="process-icon">&lt;/&gt;</div>
+            <h3>Develop</h3>
+            <p>
+              Turn the design into a responsive, functional website.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>04</span>
+            <div class="process-icon">↗</div>
+            <h3>Launch</h3>
+            <p>
+              Test, refine and prepare the final experience for users.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section skills-section">
+      <div class="container skills-grid">
+
+        <div class="skills-content reveal">
+
+          <span class="section-label">05 — CAPABILITIES</span>
+
+          <h2>
+            The tools behind
+            <span>the experience.</span>
+          </h2>
+
+          <p>
+            A focused technology stack keeps development simple and gives
+            every project a solid foundation.
+          </p>
+
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>UI Design</span>
+            <span>Landing Pages</span>
+            <span>SEO Basics</span>
+            <span>Performance</span>
+          </div>
+
+        </div>
+
+
+        <div class="skills-meter reveal">
+
+          <div class="meter-item">
+            <div>
+              <span>Front-end Development</span>
+              <strong>Core</strong>
+            </div>
+
+            <div class="meter">
+              <span style="width: 92%"></span>
+            </div>
+          </div>
+
+          <div class="meter-item">
+            <div>
+              <span>Responsive Design</span>
+              <strong>Core</strong>
+            </div>
+
+            <div class="meter">
+              <span style="width: 95%"></span>
+            </div>
+          </div>
+
+          <div class="meter-item">
+            <div>
+              <span>UI / Visual Design</span>
+              <strong>Focus</strong>
+            </div>
+
+            <div class="meter">
+              <span style="width: 86%"></span>
+            </div>
+          </div>
+
+          <div class="meter-item">
+            <div>
+              <span>JavaScript</span>
+              <strong>Core</strong>
+            </div>
+
+            <div class="meter">
+              <span style="width: 82%"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="contact-content">
+
+            <span class="section-label">06 — CONTACT</span>
+
+            <h2>
+              Have an idea?
+              <span>Let's build it.</span>
+            </h2>
+
+            <p>
+              Tell us what you're building, what you need and where you
+              want to go. We'll turn the idea into a clear digital experience.
+            </p>
+
+            <div class="contact-note">
+              <span>●</span>
+              Available for new projects
+            </div>
+
+          </div>
+
+
+          <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                >
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label for="project">Project type</label>
+
+              <select id="project" name="project">
+                <option value="Business Website">Business Website</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Portfolio">Portfolio</option>
+                <option value="UI / UX Design">UI / UX Design</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell us about your project</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="I need a modern website for..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Send project request
+              <span>↗</span>
+            </button>
+
+            <p class="form-status" id="formStatus"></p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-top">
+
+      <a href="#home" class="logo">
+        NOVA<span>•</span>
+      </a>
+
+      <p>
+        Digital experiences built with clarity.
+      </p>
+
+      <a href="#home" class="back-top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> NOVA. All rights reserved.</span>
+
+      <span>Built with HTML, CSS & JavaScript.</span>
+    </div>
+
+  </footer>
+
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    ↑
+  </button>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
